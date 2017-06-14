@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Round Off</title>
+    <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.20/angular.js" data-semver="1.3.20"></script>
+    <script src="app.js"></script>
+  </head>
+
+ <body ng-controller="MainCtrl">
+    <br/>
+    <br/>
+    <form name="simpleForm">
+    <h3>Enter some number in decimals and press tab key</h3>
+    <input type='text' name="decimalNumberText"
+        ng-model='decimalExample.decimalNumberField'
+        round-converter2>
+    <br/>
+    <p>The rounded value is  <span>{{decimalExample.decimalNumberField}}</span></p>
+    <br/>
+    </form>
+  </body>
+
+
+</html>
